@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Los Santos Radio </title>
+</head>
+<body>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyArcddXwochbMGna9xKSzSqe0uB9AiTPfQ",
+          authDomain: "los-santos-radio.firebaseapp.com",
+          projectId: "los-santos-radio",
+          storageBucket: "los-santos-radio.appspot.com",
+          messagingSenderId: "720961228778",
+          appId: "1:720961228778:web:95766178a36c2025966c93",
+          measurementId: "G-RM8QFKTEPX"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+    <div id="a"></div>
+    <script src="main.js"></script>
+    <img id="blondedRadio" src="blondedImage.png" onclick="loadStation(0)"/>
+    <img id="lsr" src="radiols.png" onclick="loadStation(1)"/>
+    
+</body>
+
+</html>
